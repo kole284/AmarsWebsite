@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ProjectPost from "../../components/ProjectPost/ProjectPost";
-import styles from "./project.module.scss";
+import styles from "./Project.module.scss";
 import shape from "../../assets/Group 7.svg"
 
 
