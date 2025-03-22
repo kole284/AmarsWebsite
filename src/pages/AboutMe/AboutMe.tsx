@@ -30,7 +30,7 @@ const AboutMe: React.FC = () =>  {
                     <br/><br/>
                     I currently work as an electrician, but I am constantly expanding my knowledge of ethical hacking and security technologies. I am always open to new challenges and self-improvement. My goal is to one day work professionally in the field of cybersecurity and identify vulnerabilities.</p>
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={styles.button}>
-                    <img src={button} className={styles['buttom-img']}/>
+                    <img src={button}/>
                 </a>
                 
             </div> 

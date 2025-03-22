@@ -27,9 +27,24 @@
     }
 
     @media #{$phone} {
+        flex-wrap: wrap;
         justify-content: center;
         font-size: 1.05rem;
-        gap: 2%;
+        gap: 10px;
         padding-right: 0;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        text-align: center;
+        grid-template-rows: auto auto;
+
+        /* Dodajemo stilove za drugi red */
+        p:nth-child(n+4) {
+            grid-column: span 1; /* Svaka stavka u drugom redu zauzima 3 kolone */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
     }
+    
 }
