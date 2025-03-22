@@ -1,5 +1,5 @@
 
-input, textarea {
+.input, .textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -11,12 +11,12 @@ input, textarea {
     }
 }
 
-textarea {
+.textarea {
     height: 100px;
     resize: none;
 }
 
-button {
+.button {
     font-family: 'jersey';
     width: 100%;
     padding: 10px;

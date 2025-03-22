@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
-import './Form.module.scss';
+import styles from './Form.module.scss';
 
 
 
@@ -41,11 +41,11 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-        <input type="text" placeholder='Your name: ' value={name} onChange={(e) => setName(e.target.value)}></input>
-        <input type="email" placeholder='Your email: ' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+        <input className={styles.input} type="text" placeholder='Your name: ' value={name} onChange={(e) => setName(e.target.value)}></input>
+        <input className={styles.input} type="email" placeholder='Your email: ' value={email} onChange={(e) => setEmail(e.target.value)}></input>
 
-        <textarea value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
-        <button type='submit'>Send Email</button>
+        <textarea className={styles.textarea} value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
+        <button className={styles.button}type='submit'>Send Email</button>
     </form>
   )
 }
