@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import styles from './Home.module.scss';
 import Line from '../../components/Line/Line'
-import photo from '../../assets/Group 3.svg'
+import photo from '../../assets/main.svg'
 import quote from '../../assets/Group 4.svg'
 import shape from '../../assets/Group 5.svg'
 
