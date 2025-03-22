@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Post from "../../components/Post/Post"
-import styles from "./blog.module.scss";
+import styles from "./Blog.module.scss";
 import shape from "../../assets/Group 7.svg"
 
 const Blog: React.FC = () => {
