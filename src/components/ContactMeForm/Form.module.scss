@@ -1,0 +1,33 @@
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 2%;
+    &::placeholder {
+        font-family: 'jersey';
+    }
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    font-family: 'jersey';
+    width: 100%;
+    padding: 10px;
+    background-color: #BA84CB;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    &:hover {
+        transition: 0.2s ease-in-out;
+        background-color: purple;
+    }
+}

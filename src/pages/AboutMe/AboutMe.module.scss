@@ -1,0 +1,116 @@
+@import '../../utils/mediaqueries';
+
+
+.wrapper {
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    @media #{$phone} {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.container-1 {
+    background-color: black;
+    font-family: 'jersey';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    .title-container {
+        font-size: 2rem;
+        background-color: black;
+        color:white;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+        @media #{$phone} {
+            font-size: 1rem;            
+        }
+    }
+    .text-container {
+        color: #828385;
+        height: 90%;
+        font-size: 1.75rem;
+        text-align: left;
+        margin-top: 5%;
+        margin-left: 10%;
+        z-index: 1;
+        
+        @media #{$phone} {
+            font-size: 1.25rem;
+        }
+    }
+    .shape1 {
+        position: absolute;
+        top:30%;
+        left: -3%;    
+        height: 50%;
+        z-index: 0;
+        @media #{$phone} {
+            display: none;
+        }
+        
+    }
+    .button {
+        img {
+            margin-top: 5%;
+            width: 30%;
+            height: 35%;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            
+            &:hover {
+                transform: scale(1.1); /* Lagano povećanje na hover */
+            }
+        }
+    }
+    
+}
+
+.container-2 {
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img {
+        height: 50%;
+    }
+    .circles {
+        height: 15%;
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        z-index: -5;
+       
+    } 
+    @media #{$phone} {
+            display: none;
+        }
+}
+
+.line {
+    height: 3%;
+    width: 35%;
+    background-color: #BA84CB;
+}
+
+.container-3 {
+    display: none;
+    @media #{$phone} {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img {
+        height: 150px;
+    }
+    }
+}

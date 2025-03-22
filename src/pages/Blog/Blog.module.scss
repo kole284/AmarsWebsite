@@ -1,0 +1,63 @@
+@import '../../utils/mediaqueries';
+
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    align-self: center;
+    width: 100%;
+    max-width: 800px;
+    justify-content: flex-start;
+  }
+  
+  .blog-title {
+    color: white;
+    font-family: 'Jersey', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .line {
+    height: 1px;
+    width: 35%;
+    max-width: 300px;
+    background-color: #BA84CB;
+  }
+  
+  .blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .circles {
+    z-index: -5;
+    height: 15%;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    @media #{$phone} { 
+      height: 10%;
+      
+    }
+}
