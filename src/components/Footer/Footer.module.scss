@@ -11,9 +11,9 @@ a {
     display: inline-block;  /* Omogućava transformacije */
     text-decoration: none;
     color: white;
-    transition: transform 0.3s ease-in-out;
+    transition: 0.2s ease-in;
 
     &:hover {
-        transform: scale(1.25);
+        color:#BA84CB;
     }
 }

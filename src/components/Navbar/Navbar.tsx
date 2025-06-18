@@ -1,26 +1,26 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.scss';
-import { Link } from 'react-router-dom';
+import { NAV_LINKS } from '../../constants/routes';
 
-function Navbar() { 
-    const links = [
-        { to: "/", label: "home" },
-        { to: "/projects", label: "projects" },
-        { to: "/about-me", label: "about-me" },
-        { to: "/blog", label: "blog" },
-        { to: "/contact-me", label: "contact-me" }
-    ];
 
-    return (
-        <div className={styles.container}>
-            {links.map((link, index) => (
-                <p key={index}>
-                    <Link to={link.to} className={styles.link}>
-                        <span style={{ color: "#BA84CB" }}>#</span>{link.label}
-                    </Link>
-                </p>
-            ))}
-        </div>
-    );
+function Navbar() {
+  return (
+    <nav className={styles.navbar}>
+      <ul className={styles.navList}>
+        {NAV_LINKS.map(({ path, label }) => (
+          <li key={path}>
+            <NavLink
+              to={path}
+              className={({ isActive }) => (isActive ? styles.active : '')}
+            >
+              {label}
+            </NavLink>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
 export default Navbar;
+

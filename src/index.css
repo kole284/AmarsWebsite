@@ -1,13 +1,35 @@
+:root {
+  --navbar-height: 40px;
+  --content-padding-top: calc(var(--navbar-height) + 2px); /* navbar + spacing */
+  --content-padding-mobile: calc(var(--navbar-height) + 15px); /* navbar + spacing na mobilnom */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: black;
-}
 
 @font-face {
   font-family: 'jersey';
-  src: url('./fonts/jersey.ttf');
+  src: url('./fonts/jersey.ttf') format('truetype');
+  font-display: swap;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'jersey', sans-serif;
+  background-color: black;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+min-height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+/* NIKAKAV padding-top ovde! */
 }

@@ -1,37 +1,37 @@
-@import '../../utils/mediaqueries';
-
+@use '../../utils/mediaqueries' as *;
 
 .container {
-    position: absolute;
-    left: 1%; // Postavi liniju uz levu ivicu ekrana
-    top: 0%;
-    transform: translateY(-50%); // Centriraj vertikalno
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    @media #{$phone} {
-    visibility: hidden;
-    
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  width: 60px;
+  padding-top: 0; // osigurano da počne od samog vrha
 
+  @media #{$phone} {
+    visibility: hidden;
+  }
 }
 
 .line {
-    width: 2px;
-    height: 100vh;
-    background-color: white;
+  width: 2px;
+  height: 50vh; // linija ide do pola ekrana
+  background-color: white;
 }
 
 .logos {
-    display: flex;
-    flex-direction: column; // Logoi ispod linije
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 
-    img {
-        width: 25px;
-        height: auto;
-    }
+  img {
+    width: 25px;
+    height: auto;
+  }
 }
 

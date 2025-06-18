@@ -1,5 +1,5 @@
 import styles from "./Line.module.scss";
-import gitLogo from "../../assets/gitlogo.svg";
+import gitLogo from "/assets/gitlogo.svg";
 
 function Line() {
   return (
